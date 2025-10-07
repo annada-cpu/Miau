@@ -1,6 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .apartaments{
     text-align: center;
     background-color: rgb(231, 232, 232);
+    padding: 2rem 0;
 }
 
 .apartaments h1 {
@@ -74,4 +81,15 @@
 
 .element:nth-child(4) .element_btn{
     background-color: rgb(192, 96, 170);
+}
+
+.who{
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4rem 1rem;
+    font-size: 20px;
+    max-width: 1200px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
