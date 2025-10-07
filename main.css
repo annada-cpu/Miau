@@ -1,0 +1,22 @@
+
+.barcelona {
+    background-color: rgb(123, 235, 19);
+    color: rgb(183, 12, 12);
+    font-size: 34px
+}
+
+.mama {
+    background-color: rgb(94, 91, 91);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    transition: all 1s ease-in-out;
+}
+
+.mama:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    background-color: #8c8a8a;
+}

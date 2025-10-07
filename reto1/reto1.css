@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.apartaments{
+    text-align: center;
+    background-color: rgb(231, 232, 232);
+    padding: 2rem 0;
+}
+
+.apartaments h1 {
+    margin-bottom: 0;
+}
+
+.apartaments p {
+    margin-top: 0;
+}
+
+.apartments__container{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+
+}
+
+.element {
+    padding: 22rem 1rem 2rem;
+}
+
+.element_description{
+    color: white;
+}
+
+.element_btn{
+    font-size: small;
+    background-color: rosybrown;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+.element:nth-child(1){
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/photo1-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.element:nth-child(2){
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/photo2-1.png');
+    background-size: cover;
+    background-position: center;
+}
+.element:nth-child(2) .element_btn{
+    background-color: rgb(224, 215, 150);
+}
+
+.element:nth-child(3){
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/photo3-1.png');
+    background-size: cover;
+    background-position: center;
+}
+.element:nth-child(3) .element_btn{
+    background-color: rgb(201, 120, 58);
+}
+
+.element:nth-child(4){
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/photo4-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.element:nth-child(4) .element_btn{
+    background-color: rgb(192, 96, 170);
+}
+
+.who{
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4rem 1rem;
+    font-size: 20px;
+    max-width: 1200px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
