@@ -21,8 +21,9 @@ html, body {
 .apartments__container{
     display: flex;
     gap: 10px;
-    margin: 20px 0;
+    margin: 20px auto;
     justify-content: center;
+    max-width: 1400px;
 
 }
 
@@ -80,6 +81,18 @@ html, body {
 }
 
 .element:nth-child(4) .element_btn{
+    background-color: rgb(192, 96, 170);
+}
+
+.element:nth-child(5){
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/rooms-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.element:nth-child(5) .element_btn{
     background-color: rgb(192, 96, 170);
 }
 
