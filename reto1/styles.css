@@ -1,0 +1,57 @@
+section{
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+.apartamentos {
+    background-color: #dcd8d8;
+}
+.container-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.gallery-item {
+    background:url('assets/photo1-1.png');
+    background-size: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &.turismo {
+        background-image: url('assets/photo2-1.png');
+    }
+    &.temporal {
+        background-image: url('assets/photo3-1.png');
+    }
+    &.larga {
+        background-image: url('assets/photo4-1.png');
+    }
+    &.casas {
+        background-image: url('assets/rooms-1.png');
+    }
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.desc {
+    background-color: #a46969;
+    padding: 15px;
+    margin: 400px 20px 0 20px;
+}
+.info {
+    margin: 10px 0 80px;
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.876);
+}   
+.whomami__info{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;}
