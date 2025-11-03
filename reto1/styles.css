@@ -117,6 +117,7 @@ h1,h2,h3{
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
+    flex-wrap: wrap;
     & h4 {
         max-width: 170px;
     }
