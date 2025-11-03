@@ -60,7 +60,7 @@ h1,h2,h3{
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.6;
-    color: #f3f5f3;
+    color:#333;
 } 
 .price{
     font-weight: bold;
