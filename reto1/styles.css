@@ -6,6 +6,12 @@ section{
 body{
     margin: 0;
 }
+
+h1,h2,h3{
+    letter-spacing: 1rch;
+    text-transform: uppercase;
+}
+
 .apartamentos {
     background-color: #dcd8d8;
 }
@@ -54,7 +60,7 @@ body{
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.6;
-    color: #333;
+    color: #f3f5f3;
 } 
 .price{
     font-weight: bold;
@@ -90,3 +96,32 @@ body{
     margin-bottom: 0px;
 }
 
+.video{
+    margin: 10px auto;
+}
+
+.servicios{
+    background-color: #f3f5f3;
+}
+.servicios__title{
+    text-transform:uppercase;
+}
+.servicios__description{
+    width: 800px;
+    margin:0 auto;
+    line-height: 1.6;
+}
+.servicios__icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    & h4 {
+        max-width: 170px;
+    }
+}
+
+.servicios__icons-bg-yellow{
+    padding: 5rem;
+    border-radius: 50%;
+    background-color: #fad67d;
+}
