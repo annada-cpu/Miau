@@ -19,6 +19,7 @@ h1,h2,h3{
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .gallery-item {
     background:url('assets/photo1-1.png');
@@ -107,9 +108,10 @@ h1,h2,h3{
     text-transform:uppercase;
 }
 .servicios__description{
-    width: 800px;
+    max-width: 800px;
     margin:0 auto;
     line-height: 1.6;
+    word-break: break-all;
 }
 .servicios__icons{
     display: flex;
