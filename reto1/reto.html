@@ -150,6 +150,54 @@
             </div>
         </div>
     </section>
+
+    <section class="contact">   
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <p class="contact__subtitle">Ponte en contacto con nosotros si tienes una consulta o quieres hablar de tu proyecto.</p>
+        <form action="#" method="post">
+
+    <input type="text" name="nombre" required placeholder="cualquiercosa"  pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]+$"   title="Debe contener solo letras y números, al menos una mayúscula y un número">
+
+
+    <input type="number" name="apellido" required min="14" max="20">
+
+    <input type="tel" name="telefono" required value="cualquiercosa"> 
+
+
+    <input type="email" name="email" required>
+
+
+
+    <div class="radio-group">
+        <p><strong>Tipo de alojamiento</strong></p>
+
+        <label>
+            <input type="radio" name="alojamiento" value="hotel" required>
+            Hotel
+        </label>
+
+        <label>
+            <input type="radio" name="alojamiento" value="apartamento">
+            Apartamento
+        </label>
+
+        <label>
+            <input type="radio" name="alojamiento" value="casa">
+            Casa
+        </label>
+    </div>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" name="terminos" required>
+            Acepto los términos y condiciones
+        </label>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+    </section>
 </body>
 
 

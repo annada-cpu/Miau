@@ -149,3 +149,6 @@ h1,h2,h3{
   border: 0;
 }
 
+.contact__subtitle {
+    font-size:small;
+ }
