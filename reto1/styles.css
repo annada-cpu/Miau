@@ -1,13 +1,16 @@
-section{
+section {
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-body{
+
+body {
     margin: 0;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     letter-spacing: 1rch;
     text-transform: uppercase;
 }
@@ -15,27 +18,32 @@ h1,h2,h3{
 .apartamentos {
     background-color: #dcd8d8;
 }
+
 .container-gallery {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .gallery-item {
-    background:url('assets/photo1-1.png');
-    background-size: cover; 
+    background: url('assets/photo1-1.png');
+    background-size: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 
     &.turismo {
         background-image: url('assets/photo2-1.png');
     }
+
     &.temporal {
         background-image: url('assets/photo3-1.png');
     }
+
     &.larga {
         background-image: url('assets/photo4-1.png');
     }
+
     &.casas {
         background-image: url('assets/rooms-1.png');
     }
@@ -50,105 +58,165 @@ h1,h2,h3{
     padding: 15px;
     margin: 400px 20px 0 20px;
 }
+
 .info {
     margin: 10px 0 80px;
     font-size: 14px;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.876);
-}   
-.whomami__info{
+}
+
+.whomami__info {
     max-width: 1200px;
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.6;
-    color:#333;
-} 
-.price{
+    color: #333;
+}
+
+.price {
     font-weight: bold;
     margin-top: 10px;
 }
-.new-properties{
+
+.new-properties {
     background-color: #dcd8d8;
     padding: 20px 0;
 }
 
-.property-container{
+.property-container {
     justify-content: center;
     gap: 30px;
     margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 400px))
 }
-.property-item{
+
+.property-item {
     background-color: #fad67d;
-    & img{
+
+    & img {
         width: 100%;
         height: auto;
     }
-    & h3{
+
+    & h3 {
         padding: 10px 0 10px 0;
     }
-    & .property-desc{
+
+    & .property-desc {
         padding: 20px 0;
     }
 
 }
-.custom-header{
+
+.custom-header {
     margin-bottom: 0px;
 }
 
-.video{
+.video {
     margin: 10px auto;
 }
 
-.servicios{
+.servicios {
     background-color: #f3f5f3;
 }
-.servicios__title{
-    text-transform:uppercase;
+
+.servicios__title {
+    text-transform: uppercase;
 }
-.servicios__description{
+
+.servicios__description {
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
     line-height: 1.6;
     word-break: break-all;
 }
-.servicios__icons{
+
+.servicios__icons {
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
-    gap:20px;
+    gap: 20px;
     flex-wrap: wrap;
+
     & h4 {
         max-width: 170px;
     }
 }
 
-.servicios__icons-bg-yellow{
+.servicios__icons-bg-yellow {
     padding: 5rem;
     border-radius: 50%;
     background-color: #fad67d;
 }
 
 .video-responsive {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 760px;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;
-  border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 760px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
 .video-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .contact__subtitle {
-    font-size:small;
- }
+    font-size: small;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.form__section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    input,
+    textarea {
+        padding: 10px;
+        color: #899093;
+        background: #f3f5f3;
+        border: 0;
+        border-bottom: 1px solid #899093;
+    }
+
+    input::placeholder {
+        color: #65676c;
+    }
+
+    .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+
+    }
+
+    button {
+        background: #fad67d;
+        padding: 1rem 2rem;
+        color: #213646;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        border: 0;
+
+    }
+
+}

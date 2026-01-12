@@ -115,12 +115,9 @@
     </section>
     <section class="video">
         <div class="video-responsive">
-        <iframe
-            src="https://www.youtube.com/embed/KrdYrVNuOEE?si=oeTJ2TcX4Mkx6Tyq"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-        ></iframe>
+            <iframe src="https://www.youtube.com/embed/KrdYrVNuOEE?si=oeTJ2TcX4Mkx6Tyq" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </section>
     <section class="servicios">
@@ -136,7 +133,7 @@
             óptimo valor.
         </p>
         <div class="servicios__icons">
-            <div> 
+            <div>
                 <div class="servicios__icons-bg-yellow">A</div>
                 <h4>Gestión a medida</h4>
             </div>
@@ -151,51 +148,54 @@
         </div>
     </section>
 
-    <section class="contact">   
+    <section class="contact">
         <h2>CONTACTA CON NOSOTROS</h2>
-        <p class="contact__subtitle">Ponte en contacto con nosotros si tienes una consulta o quieres hablar de tu proyecto.</p>
-        <form action="#" method="post">
+        <p class="contact__subtitle">Ponte en contacto con nosotros si tienes una consulta o quieres hablar de tu
+            proyecto.</p>
+        <form action="#" method="post" class="form">
+            <div class="form__section">
+                <input type="text" name="apellido" required placeholder="apellido">
+                <input type="text" name="nombre" required placeholder="nombre"
+                    pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]+$"
+                    title="Debe contener solo letras y números, al menos una mayúscula y un número">
+                <input type="email" name="email" required placeholder="email@gmail.com">
+                <input type="tel" name="telefono" required placeholder="telefono">
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="terminos" required>
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
 
-    <input type="text" name="nombre" required placeholder="cualquiercosa"  pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]+$"   title="Debe contener solo letras y números, al menos una mayúscula y un número">
+            </div>
 
+            <div class="form__section">
+                <div class="radio-group">
 
-    <input type="number" name="apellido" required min="14" max="20">
+                    <label>
+                        <input type="radio" name="alojamiento" value="hotel" required>
+                        Hotel
+                    </label>
 
-    <input type="tel" name="telefono" required value="cualquiercosa"> 
+                    <label>
+                        <input type="radio" name="alojamiento" value="apartamento">
+                        Apartamento
+                    </label>
 
+                    <label>
+                        <input type="radio" name="alojamiento" value="casa">
+                        Casa
+                    </label>
 
-    <input type="email" name="email" required>
+                </div>
 
+                
+                <textarea rows="6" name="message" placeholder="escribe aqui tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
 
+            </div>
 
-    <div class="radio-group">
-        <p><strong>Tipo de alojamiento</strong></p>
-
-        <label>
-            <input type="radio" name="alojamiento" value="hotel" required>
-            Hotel
-        </label>
-
-        <label>
-            <input type="radio" name="alojamiento" value="apartamento">
-            Apartamento
-        </label>
-
-        <label>
-            <input type="radio" name="alojamiento" value="casa">
-            Casa
-        </label>
-    </div>
-
-    <div class="checkbox-group">
-        <label>
-            <input type="checkbox" name="terminos" required>
-            Acepto los términos y condiciones
-        </label>
-    </div>
-
-    <button type="submit">Enviar</button>
-</form>
+        </form>
 
     </section>
 </body>
