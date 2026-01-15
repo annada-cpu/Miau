@@ -1,0 +1,6 @@
+<div class="radio-group">
+    <label *ngFor="let option of options()">
+        <input type="radio" [value]="option.value" [checked]="value === option.value" (change)="onRadioChange(option.value)" (blur)="onBlur()">
+        {{ option.label }}
+    </label>
+</div>

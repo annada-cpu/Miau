@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.apartamentos {
+    @apply bg-gray-200;
+}
+
+.container-gallery {
+    @apply flex justify-center gap-8 flex-wrap;
+}

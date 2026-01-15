@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+button {
+    @apply bg-yellow-200 px-8 py-5 text-blue-900 uppercase tracking-wider text-sm border-0;
+}

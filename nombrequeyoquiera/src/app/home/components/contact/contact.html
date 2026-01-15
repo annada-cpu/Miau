@@ -1,0 +1,19 @@
+<section class="contact">
+    <app-title [text]="title()"></app-title>
+    <app-description class="contact__subtitle" [text]="subtitle()"></app-description>
+    <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form__section">
+            <app-text-input formControlName="apellido" placeholder="apellido"></app-text-input>
+            <app-text-input formControlName="nombre" type="text" placeholder="nombre" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]+$" title="Debe contener solo letras y números, al menos una mayúscula y un número"></app-text-input>
+            <app-text-input formControlName="email" type="email" placeholder="email@gmail.com"></app-text-input>
+            <app-text-input formControlName="telefono" type="tel" placeholder="telefono"></app-text-input>
+            <app-checkbox formControlName="terminos" label="Acepto los términos y condiciones"></app-checkbox>
+        </div>
+
+        <div class="form__section">
+            <app-radio-group formControlName="alojamiento" [options]="radioOptions()"></app-radio-group>
+            <app-textarea formControlName="message" placeholder="escribe aqui tu mensaje" [rows]="6"></app-textarea>
+            <app-button type="submit" text="Enviar"></app-button>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+.gallery-item {
+    background: url('/photo1-1.png');
+    @apply bg-cover shadow-lg transition-transform duration-300 ease-in flex;
+
+    &.turismo {
+        background-image: url('/photo2-1.png');
+    }
+
+    &.temporal {
+        background-image: url('/photo3-1.png');
+    }
+
+    &.larga {
+        background-image: url('/photo4-1.png');
+    }
+
+    &.casas {
+        background-image: url('/rooms-1.png');
+    }
+}
+
+.gallery-item:hover {
+    @apply scale-105;
+}
+
+.desc {
+    @apply bg-red-600 p-4 mx-5 mt-64 mb-20;
+}
+
+.info {
+    @apply my-2.5 mx-0 mb-20 text-sm text-white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.876);
+}

@@ -1,0 +1,17 @@
+<section class="new-properties">
+    <app-title class="custom-header" [text]="header()"></app-title>
+    <small>{{ subtitle() }}</small>
+
+    <div class="property-container">
+        @for (property of properties(); track property.image) {
+            <article class="property-item">
+                <h3>{{ property.title }}</h3>
+                <img [src]="property.image" [alt]="property.title" />
+                <div class="property-desc">
+                    <p>{{ property.description }}</p>
+                    <span class="price">{{ property.price }}</span>
+                </div>
+            </article>
+        }
+    </div>
+</section>

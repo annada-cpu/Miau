@@ -1,0 +1,14 @@
+<section class="apartamentos">
+
+  <app-title text="APARTAMENTOS EN BARCELONA"></app-title>
+
+
+
+
+    <h5>Encuentra el apartamento de tus sueños en Barcelona</h5>
+    <div class="container-gallery">
+        @for (item of galleryItems(); let i = $index; track item.link) {
+            <app-banner [item]="item" [numero]="i"></app-banner>
+        }
+    </div>
+</section>

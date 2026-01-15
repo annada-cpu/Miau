@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@reference "tailwindcss";
+@import "tailwindcss/preflight";
+
+section {
+    @apply text-center p-5 font-sans;
+}
+
+body {
+    @apply m-0;
+}
+
+h1,
+h2,
+h3 {
+    @apply tracking-wider uppercase;
+}

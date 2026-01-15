@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.new-properties {
+    @apply bg-gray-300 py-5;
+}
+
+.property-container {
+    @apply justify-center gap-8 my-8 grid grid-cols-[repeat(auto-fit,minmax(0,400px))];
+}
+
+.property-item {
+    @apply bg-yellow-200;
+
+    & img {
+        @apply w-full h-auto;
+    }
+
+    & h3 {
+        @apply pt-0 pb-2.5;
+    }
+
+    & .property-desc {
+        @apply py-5;
+    }
+}
+
+.price {
+    @apply font-bold mt-2.5;
+}
+
+.custom-header {
+    @apply mb-0;
+}

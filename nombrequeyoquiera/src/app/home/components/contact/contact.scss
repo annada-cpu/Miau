@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.contact__subtitle {
+    @apply text-sm;
+}
+
+.form {
+    @apply flex justify-center gap-8 max-w-[1000px] mx-auto my-8;
+}
+
+.form__section {
+    @apply flex flex-col gap-5 w-full;
+}

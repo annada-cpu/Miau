@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+textarea {
+    @apply p-2.5 text-gray-600 bg-gray-100 border-0 border-b border-gray-600;
+}

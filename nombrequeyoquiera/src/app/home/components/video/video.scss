@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.video {
+    @apply my-2.5 mx-auto;
+}
+
+.video-responsive {
+    @apply relative overflow-hidden w-full max-w-[760px] aspect-video mx-auto rounded-xl;
+}
+
+.video-responsive youtube-player {
+    @apply absolute top-0 left-0 w-full h-full border-0;
+}

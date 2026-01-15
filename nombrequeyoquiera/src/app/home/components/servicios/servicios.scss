@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.servicios {
+    @apply bg-gray-100;
+}
+
+.servicios__title {
+    @apply uppercase;
+}
+
+.servicios__description {
+    @apply max-w-[800px] mx-auto leading-relaxed break-all;
+}
+
+.servicios__icons {
+    @apply flex justify-around my-10 gap-5 flex-wrap;
+
+    & h4 {
+        @apply max-w-[170px];
+    }
+}
+
+.servicios__icons-bg-yellow {
+    @apply p-20 rounded-full bg-yellow-200;
+}
